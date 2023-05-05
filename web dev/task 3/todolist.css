@@ -1,0 +1,101 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  body {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 30px 30px 30px 30px;
+    background: #dfb5e8;
+    font-size: 30px;    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #d92828;
+    color: white;
+  }
+  /to detect click/
+  ul li:hover {
+    background: rgb(90, 133, 141);
+  }
+          
+  /* When clicked on */
+  ul li.checked {
+    background: rgba(99, 96, 96, 0.734);
+    color: #fff;
+    text-decoration: line-through;
+  }
+    /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }        
+  
+  .header {
+    background-color: #ac15ac;
+    padding: 30px 40px;
+    color: rgb(3, 3, 3);
+    text-align: center;
+  }
+  
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+     width: 100%;
+    padding: 10px;
+    float: left;
+    font-size: 20px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 20px;
+    width: 10%;
+    background: #703a6e;
+    color: #070707;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #4c6e8a;
+  }
